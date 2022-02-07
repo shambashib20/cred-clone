@@ -1,0 +1,84 @@
+.hero-section-wrapper {
+    position: relative;
+}
+.hero-section {
+    min-height: 100vh;
+    text-align: center;
+}
+  
+.hero-heading {
+    font-size: 106px;
+    font-weight: 700;
+}
+  
+.hero-subheading {
+    line-height: 38px;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 35px 58px;
+}
+  
+.hero-claim-label {
+    background-color: var(--bg - gray);
+    width: 100%;
+    position: absolute;
+    height: 72px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+}
+  
+.claim-arrow {
+    height: 11px;
+    margin: 7px 0px 0px 8px;
+}
+  
+.claim-anchor {
+    margin-left: 17px;
+    color: var(--link - blue);
+}
+
+@media all and(max-width: 1279px) {
+    .hero-heading {
+        font-size: 82px;
+        line-height: 92px;
+    }
+  
+    .hero-subheading {
+        font-size: 25px;
+    }
+  
+    .hero-claim-label {
+        flex-direction: column;
+    }
+    .claim-anchor {
+        margin-left: 0px;
+    }
+}
+
+@media all and(max-width: 767px) {
+    .hero-section {
+        align-items: flex - start;
+        text-align: left;
+        min-height: 70vh;
+    }
+    .hero-heading {
+        font-size: 55px;
+        line-height: 47.5px;
+        width: 270px;
+        margin-top: 60px;
+    }
+    .hero-subheading {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 35px 0px;
+    }
+    .hero-claim-label {
+        height: 55px;
+        font-size: 13px;
+    }
+    .claim-arrow {
+        height: 6px;
+        margin: 2px 0px 0px 3px;
+    }
+}
