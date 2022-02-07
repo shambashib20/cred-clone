@@ -1,84 +1,31 @@
-.hero-section-wrapper {
-    position: relative;
-}
-.hero-section {
-    min-height: 100vh;
-    text-align: center;
-}
-  
-.hero-heading {
-    font-size: 106px;
-    font-weight: 700;
-}
-  
-.hero-subheading {
-    line-height: 38px;
-    font-size: 30px;
-    font-weight: 700;
-    margin: 35px 58px;
-}
-  
-.hero-claim-label {
-    background-color: var(--bg - gray);
-    width: 100%;
-    position: absolute;
-    height: 72px;
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: 600;
-}
-  
-.claim-arrow {
-    height: 11px;
-    margin: 7px 0px 0px 8px;
-}
-  
-.claim-anchor {
-    margin-left: 17px;
-    color: var(--link - blue);
-}
+import React from "react";
+import Button from "../common/Button";
+import "./heroSection.css";
 
-@media all and(max-width: 1279px) {
-    .hero-heading {
-        font-size: 82px;
-        line-height: 92px;
-    }
-  
-    .hero-subheading {
-        font-size: 25px;
-    }
-  
-    .hero-claim-label {
-        flex-direction: column;
-    }
-    .claim-anchor {
-        margin-left: 0px;
-    }
-}
+const HeroSection = () => {
+    return (
+        <div className="hero-section-wrapper">
+            <div className="flex absolute-center hero-claim-label">
+                <div>pay credit card bill. earn guaranteed ₹200 back.</div>
+                <div className="claim-anchor">
+                    claim now
+                    <img
+                        src="https://web-images.credcdn.in/_next/assets/images/home-page/arrow.png"
+                        className="claim-arrow"
+                    />
+                </div>
+            </div>
+            <div className="flex flex-col absolute-center hero-section max-width">
+                <div className="hero-heading">
+                    rewards for paying credit card bills.
+                </div>
+                <div className="hero-subheading">
+                    join 7.5M+ members who win rewards and cashbacks everyday
+                </div>
+                <Button buttonText="Download CRED" />
+            </div>
+        </div>
+    );
+};
 
-@media all and(max-width: 767px) {
-    .hero-section {
-        align-items: flex - start;
-        text-align: left;
-        min-height: 70vh;
-    }
-    .hero-heading {
-        font-size: 55px;
-        line-height: 47.5px;
-        width: 270px;
-        margin-top: 60px;
-    }
-    .hero-subheading {
-        font-size: 16px;
-        line-height: 22px;
-        margin: 35px 0px;
-    }
-    .hero-claim-label {
-        height: 55px;
-        font-size: 13px;
-    }
-    .claim-arrow {
-        height: 6px;
-        margin: 2px 0px 0px 3px;
-    }
-}
+export default HeroSection;
