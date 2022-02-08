@@ -63,3 +63,40 @@
   font-weight: 600;
   margin-top: 52px;
 }
+
+@media all and (max-width: 1279px) {
+  .mobile-scroll {
+    padding-bottom: 30px;
+  }
+  .mobile-mockup {
+    width: 272px;
+    height: 480px;
+  }
+  .screen-heading {
+    font-size: 70px;
+    line-height: 70px;
+  }
+  .mobile-mockup {
+    transform: translateX(10%);
+  }
+
+  .screen-description {
+    font-size: 18px;
+    margin-top: 44px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .mobile-mockup {
+    width: 272px;
+    height: 480px;
+  }
+  .screen-heading {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .scroll-full-screen-wrapper {
+    width: 100%;
+  }
+}
